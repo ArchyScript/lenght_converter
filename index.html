@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class='container'> 
+      <header>
+        <div class='select_cont'>
+          <select id='select_scale'>
+            <option id=''> Select Convertion Scale </option>
+            <option id='cm'> Centimeter </option>
+            <option id='km'> Kilometer </option>
+            <option id='yd'> Yards </option>
+            <option id='in'> Inches </option>
+            <option id='ft'> Feets </option>
+            <option id='ml'> Miles </option>
+          </select>
+          <div id='err_msg'> </div>
+          <button id='check_btn'> Confirm Scale </button>
+        </div>
+        <div id='current_convertee'> Current Convertee </div>
+        <div id='input_container'>
+          <input type='number' id='input_value' placeholder='Enter Value'>
+        </div>
+      </header>
+     <main>
+       <div class='row' id='cm_row'>
+         <label> Centimeters </label>
+         <input id='cm_result' type='number' readonly>
+       </div>
+       <div class='row' id='km_row'>
+         <label> Kilometers </label>
+         <input id='km_result' type='number' readonly>
+       </div>
+       <div class='row' id='yd_row'>
+         <label> Yards </label>
+         <input id='yd_result' type='number' readonly>
+       </div>
+       <div class='row' id='in_row'>
+         <label> Inches </label>
+         <input id='in_result' type='number' readonly>
+       </div>
+       <div class='row' id='ft_row'>
+         <label> Feets </label>
+         <input id='ft_result' type='number' readonly>
+       </div>
+       <div class='row' id='ml_row'>
+         <label> Miles </label>
+         <input id='ml_result' type='number' readonly>
+       </div>
+     </main>
+   </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
